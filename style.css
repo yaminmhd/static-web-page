@@ -1,0 +1,61 @@
+*{
+  font-family: monospace;
+}
+
+.logo{
+  display:grid;
+  background:black;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  padding: 50px;
+}
+
+.nav-item-home{
+  grid-area:home;
+}
+.nav-item-blog{
+  grid-area:blog;
+}
+.nav-item-about{
+  grid-area:about;
+}
+.nav-item-contact{
+  grid-area:contact;
+}
+
+.navigation{
+  display: grid;
+  grid-template-columns:repeat(12, 1fr);
+  grid-template-areas: ". . . . home blog about contact . . . .";
+  background: darkslategray;
+  color: white;
+  font-size: 1rem;
+  padding: 15px;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 50px;
+  background: dimgray;
+  padding: 30px 10px;
+}
+
+.mainContent{
+  background: white;
+  padding: 20px;
+}
+
+.sideContent{
+  background: white;
+  padding: 10px;
+}
+
+.footer{
+  display: grid;
+  grid-template-rows: 1fr;
+  background: lightgrey;
+  text-align: center;
+}
